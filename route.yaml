@@ -1,0 +1,6 @@
+
+base_path: App\controllers\
+
+
+routes:
+  home: [/berita,Berita::index, GET]
