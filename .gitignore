@@ -1,0 +1,6 @@
+.idea/
+.phpintel/
+bower_components/
+composer.lock
+vendor/
+phpclass.sublime-classdb
