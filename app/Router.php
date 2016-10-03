@@ -128,8 +128,8 @@ class Router
     {
         $collection = new RouteCollection();
         foreach ($config['routes'] as $name => $route) {
-            $collection->attachRoute(new Route($route[0], array(
-                '_controller' => str_replace('.', '::', $route[1]),
+            $collection->prosesRoute(new Route($route[0], array(
+                'ctr' => str_replace('.', '::', $route[1]),
                 'methods' => $route[2],
                 'name' => $name
             )));

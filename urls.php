@@ -12,17 +12,22 @@ $router = new Router($collection);
 $router->setBasePath('');
 $route = $router->matchCurrentRequest();
 
+
+//var_dump($route);
+/**** jika ingin diLoad route nya dengan yml **/
+//pastikan final class RouteYml di load serta class route lainnya 
+// use App\RouteYml;
+// use App\RouteCollection;
+// use App\Router;
+// use App\Route;
+// $config = RouteYml::loadFromFile(__DIR__.'/route.yaml');
+// $router = Router::parseConfig($config);
+
+// $route = $router->matchCurrentRequest();
+// $router->matchCurrentRequest();
+// //var_dump($router);
 if(!$route){
 	header("HTTP/1.0 404 Not Found");	
+	//var_dump($route);
 	exit('Halaman Tidak ditemukan') ;
 }
-//var_dump($route);
-/**** jika ingin diLoad route nya dengan yml
-pastikan final class RouteYml di load serta class route lainnya 
-use App\RouteYml;
-use App\RouteCollection;
-use App\Router;
-use App\Route;
-$config = Config::loadFromFile(__DIR__.'/router.yaml');
-$router = Router::parseConfig($config);
-$router->matchCurrentRequest();

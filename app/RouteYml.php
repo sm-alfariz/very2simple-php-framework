@@ -4,12 +4,10 @@
 *
 *
 contoh file_route.yml
-base_path: /
+base_path: App\controllers
 
 routes:
-  index: [/, Home.indexHome, GET]
-  contact: [/berita, Berita.indexBerita, GET]
-  about: [/berita/:slug, Berita.BacaBerita, GET]
+  home: [/berita,Berita::index, GET]
 */
 namespace App;
 use InvalidArgumentException;
