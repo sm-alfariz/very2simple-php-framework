@@ -1,5 +1,9 @@
 ##instalasi :
 - Kalo via git yah tinggal di clone aja
+- Folder Template ada view
+- Model table ada di folder model namespace Model
+- Route untuk framework nya adalah file url.php 
+- web root ada di folder public
 - edit configurasi database.yml menyesuaikan dengan database di komputer masing masing
 - karena saya tidak sertakan folder vendor dan bower_components jadi :
   install sendiri di komputernya via composer : composer update (didalam folder projek)
