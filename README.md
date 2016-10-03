@@ -54,7 +54,7 @@ server {
 
 
 - saya sertakan juga dump mysql untuk database nya
-- dan Masi banyak kekurangannya 
+- dan Masi banyak perlu pengembangan contoh seperti middleware,auth,psr-7 http request, pagination akan saya kembangkan perlahan silahkan request bila ada yg mau bantuin :D
 
 referensi :
 * [Elequont laravel](https://laravel.com/docs/5.3/eloquent)
