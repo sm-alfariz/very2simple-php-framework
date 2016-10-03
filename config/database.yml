@@ -8,7 +8,7 @@ database:
             host: localhost
             database: nativephp
             username: fendi
-            password: 
+            password: as6785A
             charset: utf8
             collation: utf8_unicode_ci
             prefix: ''
