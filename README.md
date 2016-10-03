@@ -12,6 +12,8 @@
   layout.twig 	
 - Install bower di dalam folder public install jquery dan bootsrap
 - Run php developing server ``` php -S localhost:8000 -t public/ ```
+- untuk berjalan dengan web server yang ada pastikan web server sudah di config untuk remove index.php
+  - apache use .htaccess, nginx set config (search google how to remove index.php from uri apache or ngix)
 
 sekarang sudah menjadi Frame work php sederhana dari awal yang native
 
