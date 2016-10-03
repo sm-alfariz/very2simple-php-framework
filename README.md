@@ -23,6 +23,7 @@ menjadi
     <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 ```
+sekarang sudah menjadi Frame work php sederhana dari awal yang native
 ** saya sertakan juga dump mysql untuk database nya
 
 referensi :
