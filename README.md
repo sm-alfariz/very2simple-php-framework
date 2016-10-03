@@ -25,7 +25,7 @@ RewriteEngine On
 RewriteRule ^(.*)$ index.php [NC,L]
 ```
 
-conoth config nginx:
+contoh config nginx:
 
 ```nginx
 server {
