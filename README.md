@@ -1,3 +1,4 @@
+#very2simple : Very very simple php Framework
 ##instalasi :
 - Kalo via git yah tinggal di clone aja
 - Folder Template ada view
@@ -13,11 +14,47 @@
 - Install bower di dalam folder public install jquery dan bootsrap
 - Run php developing server ``` php -S localhost:8000 -t public/ ```
 - untuk berjalan dengan web server yang ada pastikan web server sudah di config untuk remove index.php
-  - apache use .htaccess, nginx set config (search google how to remove index.php from uri apache or nginx)
+  - apache use .htaccess, nginx set config 
+### Friendly URL
 
-sekarang sudah menjadi Frame work php sederhana dari awal yang native
+Untuk apache .htaccess taruh di root web (public) dan Apache sudah enabled mod_rewrite
 
-** saya sertakan juga dump mysql untuk database nya
+```apache
+Options +FollowSymLinks
+RewriteEngine On
+RewriteRule ^(.*)$ index.php [NC,L]
+```
+
+conoth config nginx:
+
+```nginx
+server {
+	listen 80;
+	server_name very2simple.dev;
+	root /var/www/very2simple/public;
+
+	index index.php;
+
+	location / {
+		try_files $uri $uri/ /index.php?$query_string;
+	}
+
+	location ~ \.php$ {
+		fastcgi_split_path_info ^(.+\.php)(/.+)$;
+		# NOTE: You should have "cgi.fix_pathinfo = 0;" in php.ini
+
+		# With php5-fpm:
+		fastcgi_pass unix:/var/run/php5-fpm.sock;
+		fastcgi_index index.php;
+		include fastcgi.conf;
+		fastcgi_intercept_errors on;
+	}
+}
+```  
+
+
+- saya sertakan juga dump mysql untuk database nya
+- dan Masi banyak kekurangannya 
 
 referensi :
 * [Elequont laravel](https://laravel.com/docs/5.3/eloquent)
