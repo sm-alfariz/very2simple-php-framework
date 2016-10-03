@@ -14,7 +14,7 @@ $route = $router->matchCurrentRequest();
 
 
 //var_dump($route);
-/**** jika ingin diLoad route nya dengan yml **/
+/**** jika ingin diLoad route nya dengan yml/yaml **/
 //pastikan final class RouteYml di load serta class route lainnya 
 // use App\RouteYml;
 // use App\RouteCollection;
