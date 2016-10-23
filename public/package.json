@@ -1,0 +1,11 @@
+{
+  "name": "very2simple-php-framework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "http-server"
+  },
+  "author": "sm-alfariz",
+  "license": "MIT"
+}
