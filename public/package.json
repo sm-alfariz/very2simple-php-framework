@@ -7,5 +7,8 @@
     "test": "http-server"
   },
   "author": "sm-alfariz",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "vue": "^2.0.3"
+  }
 }
