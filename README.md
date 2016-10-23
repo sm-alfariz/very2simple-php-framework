@@ -55,7 +55,7 @@ server {
 
 - saya sertakan juga dump mysql untuk database nya
 - dan Masi banyak perlu pengembangan contoh seperti middleware,auth,psr-7 http request, pagination akan saya kembangkan perlahan silahkan request bila ada yg mau bantuin :D
-
+- Starting developing for make backend front with vue js 
 referensi :
 * [Elequont laravel](https://laravel.com/docs/5.3/eloquent)
 * [Twig Template](twig.sensiolabs.org/documentation)
