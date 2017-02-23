@@ -1,4 +1,5 @@
 #very2simple : Very very simple php Framework
+[![Build Status](https://travis-ci.org/sm-alfariz/very2simple-php-framework.svg?branch=master)](https://travis-ci.org/sm-alfariz/very2simple-php-framework)
 ##instalasi :
 - Kalo via git yah tinggal di clone aja
 - Folder Template ada view
