@@ -7,5 +7,6 @@ before_install:
   - mysql -e 'CREATE DATABASE IF NOT EXISTS v2db;'
 script:
   - mysql v2db < dump_sql/nativephp.sql
+  - composer update
   - php -S localhost:8000 -t public/ 1>/dev/null &
 os: 'linux'
