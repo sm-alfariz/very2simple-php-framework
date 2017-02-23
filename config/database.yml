@@ -6,7 +6,7 @@ database:
         mysql:
             driver: mysql
             host: localhost
-            database: nativephp
+            database: v2db
             username: fendi
             password: 
             charset: utf8
