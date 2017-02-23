@@ -1,11 +1,12 @@
 language: php
 php:
   - '7.0'
-  - '7.1'
 addons:
   mariadb: '10.0'
 services:
   - mysql
 before_install:
   - mysql -e 'CREATE DATABASE IF NOT EXISTS v2db;'
+script:
+- php -S localhost:8000 -t public/
 os: 'linux'
