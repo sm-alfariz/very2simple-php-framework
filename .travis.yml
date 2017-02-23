@@ -3,10 +3,8 @@ php:
   - '7.0'
 addons:
   mariadb: '10.0'
-services:
-  - mysql
 before_install:
   - mysql -e 'CREATE DATABASE IF NOT EXISTS v2db;'
 script:
-- php -S localhost:8000 -t public/
+  - php -S localhost:8000 -t public/ 1>/dev/null &
 os: 'linux'
